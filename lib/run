@@ -1,0 +1,39 @@
+# from pet import Pet
+# from owner import Owner
+from player import Player
+from enemy import Enemy
+
+# aidan = Owner(name="Aidan")
+# adrian = Owner(name="Adrian")
+
+# try:
+#   pet_1 = Pet(name="Toby", species="Dog", breed="Pug", age=2)
+#   pet_2 = Pet(name="Tulip", species="Cat", breed="Russian Blue", age=6)
+#   pet_3 = Pet(name="Kirby", species="Dog", breed="Bulldog", age=1)
+# except Exception as error:
+#   print(error)
+
+# pet_1.eat("Bagel")
+# pet_2.eat("Fish")
+# pet_3.eat("Anything")
+
+# Pet.inventory()
+# pet_1.get_adopted(aidan)
+# pet_2.get_adopted(aidan)
+# pet_3.get_adopted(adrian)
+
+# pet_1.owner = aidan
+# pet_2.owner = aidan
+# pet_3.owner = adrian
+
+# print(pet_1.owner.pets)
+# print(pet_2.owner.pets)
+# print(pet_3.owner.pets)
+
+player_1 = Player(name="SuperBob", stats={ "str": 50, "health": 50, "intelligence": 999, "wisdom": 5 }, controls="Enabled")
+
+enemy = Enemy(name="SuperKaren", stats={ "str": 999, "health": 9999, "intelligence": 5, "wisdom": 1 })
+
+player_1.attack(enemy)
+
+enemy.attack(player_1)
